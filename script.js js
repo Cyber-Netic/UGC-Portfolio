@@ -1,0 +1,22 @@
+// Small enhancements: sticky header shadow + dynamic year in footer
+
+// Add shadow to header when scrolled
+const header = document.querySelector('.site-header');
+
+function handleScroll() {
+  if (!header) return;
+  if (window.scrollY > 10) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+handleScroll(); // run on load
+
+// Set current year in footer
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
