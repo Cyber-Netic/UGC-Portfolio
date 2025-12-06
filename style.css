@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -498,42 +497,3 @@ body {
   .hero-content {
     flex: 1.2;
   }
-
-  .hero-phone {
-    flex: 1;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .reel-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .benefits-wrap {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
-  }
-
-  .testimonial-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .contact-grid {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    padding-top: 2.6rem;
-  }
-
-  .hero h1 {
-    font-size: 1.7rem;
-  }
-
-  .main-nav {
-    display: none; /* simple mobile: hide nav, header stays clean */
-  }
-}
